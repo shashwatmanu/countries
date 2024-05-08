@@ -5,7 +5,7 @@ const Countries = ({img, name}) => {
     console.log(name)
   return (
     <div className='country'>
-        <img src={img} style={{width:'100px',height:'100px', alignSelf:'center'}}/>
+        <img src={img} style={{width:'100px',height:'100px', alignSelf:'center'}} alt='flag'/>
         <div className='name'>{name}</div>
     </div>
   )

@@ -7,7 +7,7 @@ function App() {
   const [countries, setCountries] = useState([]);
 
   useEffect(()=>{
-fetch('https://restcountries.com/v3.1/all').then((res)=>res.json()).then((data)=>setCountries(data));
+fetch('https://restcountries.com/v3.1/all').then((res)=>res.json()).then((data)=>setCountries(data)).catch((error)=>console.log(error));
   },[])
   // console.log(countries)
   return (
