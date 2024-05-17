@@ -28,7 +28,7 @@ setResult(resultVar);
     <input type="text" style={{width:'50vw', margin:'3px'}} placeholder="Search for Countries..." onChange={handleChange} value={search}/>
    </div>
    <div className="container">
-   {result.map((country)=><Countries img={country.flags.png} name={country.name.common}/>)}
+   {search===""?(countries.map((country)=><Countries img={country.flags.png} name={country.name.common}/>)):(result.map((country)=><Countries img={country.flags.png} name={country.name.common}/>))}
    </div>
    </>
   );
