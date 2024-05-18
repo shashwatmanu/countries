@@ -1,15 +1,16 @@
 import React from 'react'
 import "./Countries.css"
 
-const Countries = ({img, name}) => {
+const Countries = ({data}) => {
     // console.log(name)
   return (
     <div className='countryCard'>
-        <img src={img} style={{width:'100px',height:'100px', alignSelf:'center'}} alt='flag'/>
-        <h2 className='name'>{name}</h2>
+        <img src={data.flags.svg} style={{width:'100px',height:'100px', alignSelf:'center'}} alt='flag'/>
+        <h2 className='name'>{data.name.common}</h2>
     </div>
   )
 }
+
 
 export default Countries
 
